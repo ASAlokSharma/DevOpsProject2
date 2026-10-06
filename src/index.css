@@ -1,0 +1,7 @@
+@tailwind base;@tailwind components;@tailwind utilities;
+body{@apply bg-slate-50 text-slate-800 antialiased transition-colors duration-300 dark:bg-ink dark:text-slate-100}
+.input{@apply w-full rounded-xl border border-slate-300 bg-white px-4 py-3 outline-none transition focus:border-brand-500 focus:ring-4 focus:ring-brand-500/20 dark:border-white/15 dark:bg-white/5}
+.btn{@apply inline-flex items-center justify-center gap-2 rounded-xl px-5 py-3 font-semibold transition active:scale-95 focus-visible:ring-4 focus-visible:ring-brand-500/40 disabled:opacity-60}
+.btn-primary{@apply btn bg-brand-500 text-white hover:bg-brand-600}
+.btn-ghost{@apply btn border border-slate-300 bg-white hover:bg-slate-100 dark:border-white/15 dark:bg-white/5 dark:hover:bg-white/10}
+@media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}}
